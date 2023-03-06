@@ -20,7 +20,7 @@ const About = () => {
                 time to practice but boy, I sure did make time to at least play around with it some. It wasn't until
                 late 2020 where I really craved some more structure when it came to my code. I toyed with the
                 idea of switching majors. That was until, after seeing a few different ads, where I decided to take a 
-                sharp turn and drop out to enroll into a coding bootcamp 
+                sharp turn and drop out to enroll into a coding boot-camp 
             </p>
         </div>
     )
