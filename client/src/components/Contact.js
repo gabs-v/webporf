@@ -1,28 +1,27 @@
 import React,{useState} from 'react'
 
 
-const Contact = () => {
+const Contact = (props) => {
+  const [firstName,setFirstName] = useState('');
+  const [email, setEmail] = useState ('');
+  const [message, setMessage] = useState ('');
 
-  const ContactForm = (props) => {
-    const [firstName,setFirstName] = useState('');
-    const [email, setEmail] = useState ('');
-    const [message, setMessage] = useState ('');
-
-    const createForm = (e) =>{
-      e.preventDefault() //prevent the refresh 
+  const contactForm = (e) => {
+    e.preventDefault()
         const newConnect = {firstName, email, message};
-        console.log("Welcome" , firstName)
+        console.log('new connect created', {newConnect})
       setFirstName('')
       setEmail('')
       setMessage('')
+      return (
+        alert('Thanks for reaching out')
+      )
     }
-  }
-
 
 
   return (
     <div>
-      <form onSubmit={ createForm } >
+      <form onSubmit={contactForm} >
         <h1>Want to connect?</h1>
         <h2>Send me an email!</h2>
 
@@ -32,8 +31,13 @@ const Contact = () => {
         </div>
         <div>
           <label>Email</label>
-          <input type='text'  />
+          <input type='email' onChange={ (e) => setEmail(e.target.value) } />
         </div>
+        <div>
+          <label>Message</label>
+          <input type='text' onChange = { (e) => setMessage(e.target.value)} />
+        </div>
+        <input type='submit' value='Submit' />
       </form>
     </div>
   )
