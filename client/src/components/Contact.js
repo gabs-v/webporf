@@ -16,6 +16,7 @@ const Contact = (props) => {
       return (
         alert('Thanks for reaching out')
       )
+      
     }
 
 

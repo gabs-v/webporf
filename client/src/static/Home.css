@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    font-family: Abril Fatface;
+    background-color: rgb(137, 176, 143);
+    color:rgb(4, 49, 9);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.mainContainer{
+    height: 20em;
+}
+
+
