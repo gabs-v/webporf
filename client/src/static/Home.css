@@ -1,15 +1,25 @@
 body{
     text-align: center;
     font-family: Abril Fatface;
-    background-color: rgb(137, 176, 143);
-    color:rgb(4, 49, 9);
+    font-weight: 600;
+    color: rgb(233, 188, 179);
+    text-shadow: .05em .05em .5em rgb(0, 0, 0);
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 nav{
     display: flex;
     justify-content: space-between;
-    font-size: x-large;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    font-size: xx-large;
+    padding-top: .5em;
+    background-color: #21001d;
+    padding-bottom: .5em;
 }
 ul{
     width: 100%;
@@ -17,7 +27,34 @@ ul{
     justify-content: space-around;
 }
 .mainContainer{
-    height: 20em;
+    display: flex;
+    align-items: center;
+    height: 30em;
+    background-color: #21001d;
+    padding: 3%;
 }
-
-
+.current{
+    color: #af4b7b;
+    text-shadow: .05em .05em .1em #94317a;
+}
+span{
+    color: #c65c93;
+}
+left{
+    font-size: 1.5em;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 70%;
+}
+img{
+    width: 30%;
+    border: .4em double #c65c93;
+    border-radius: 50%;
+    animation: fadeInAnimation ease 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+h1{
+    font-size: 5em;
+}
