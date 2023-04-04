@@ -1,5 +1,4 @@
 import React from 'react'
-import '../static/Home.css'
 import Me from '../static/img/Order_gaby.png'
 
 const Home = () => {
