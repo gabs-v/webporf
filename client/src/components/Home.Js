@@ -1,5 +1,5 @@
 import React from 'react'
-import Me from '../static/img/Order_gaby.png'
+import Me from '../img/me.JPEG'
 
 const Home = () => {
     return (

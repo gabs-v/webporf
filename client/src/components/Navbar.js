@@ -2,7 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+ 
 
+    // maybe try to have the links go to the components within the main?? 
+    // Smooth Scrolling Navbar Transition in ReactJS
 
   return (
     <div>
@@ -12,13 +15,13 @@ const Navbar = () => {
                     <Link to='/'> Home </Link>
                 </li>
                 <li>
-                    <Link to='/about'> About </Link>
+                    <Link to='/'> About </Link>
                 </li>
                 <li>
-                    <Link to='/projects'> Projects </Link>
+                    <Link to='/'> Projects </Link>
                 </li>
                 <li>
-                    <Link to='/contact'> Contact </Link>
+                    <Link to='/'> Contact </Link>
                 </li>
             </ul>
         </nav>
